@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+  .form-control {
+  width: 320px;  
+  font-family: Verdana, sans-serif;
+  position: relative;
+}
+
+.form-control input {
+  display: block;
+  outline: none;
+  width: 100%;
+  background: #fff;
+  border: 2px solid #fcc;
+  padding: 20px 15px 10px;
+  font-size: 24px;
+  color: #500;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.form-control label {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  color: #aaa;
+  font-size: 20px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+
+.form-control input:valid + label,
+.form-control input:focus + label {
+  top: 0;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <div class="form-control">
+    <input type="text" id="login" required>
+    <label for="login">Login</label>
+  </div>
+</body>
+</html>
+
+
